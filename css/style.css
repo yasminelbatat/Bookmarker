@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+::selection{
+    background-color: #FEC260;
+}
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    color: #352E28;
+}
+h1::before {
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 25%;
+    bottom: 50%;
+    background-color: #fec260;
+    transition: height .5s;
+    z-index: -2;
+}
+h1:hover::before {
+    height: 50%;
+}
+h2{
+    background: linear-gradient(to right, green, yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* start of form */
+form{
+    border-bottom: #352E28 dashed 1px;
+    border-top: #352E28 dashed 1px;
+}
+.form-control:focus {
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 3px #fec26055;
+}
+/* end of form */
+
+/* start of table */
+table, th, td {
+    border: 1px solid;
+}
+table {
+    border-collapse: collapse;
+}
+/* end of table */

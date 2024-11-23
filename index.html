@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="w-75 m-auto py-5">
+        <h1 class="text-center pb-5 fs-1 position-relative z-2">Bookmarker</h1>
+        <form class="inputs">
+            <h2 class="fs-5 text-center pt-3"><i class="fa-solid fa-bookmark pe-3"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark ps-3"></i> </h2>
+            <div class="mb-3">
+                <label for="sitename" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <input oninput="demo(this.value)" type="text" class="form-control " id="sitename" placeholder="Bookmark Name" >
+            </div>
+            <div class="mb-3">
+                <label for="siteurl" class="form-label fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input oninput="demo2(this.value)" type="text" class="form-control" id="siteurl" placeholder="Website URL" >
+            </div>
+            <button class="btn btn-danger px-5 py-1 position-relative top-50 start-50 translate-middle mt-3" id="addbtn" onclick="addation()">Submit</button>
+            <button class="btn btn-warning position-relative top-50 start-50 translate-middle mt-3 d-none" id="updatebtn" onclick="updateproduct()">Update</button>
+        </form>
+        <table class="table-light bg-light w-100 text-center mt-4 ">
+            <tr class="table-light">
+                <th class="table-light">Index</th>
+                <th class="table-light">Webiste Name</th>
+                <th class="table-light">Visit</th>
+                <th class="table-light">Delete</th>
+                <th class="table-light">Update</th>
+            </tr>
+            <tbody id="row" class="table-light">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
